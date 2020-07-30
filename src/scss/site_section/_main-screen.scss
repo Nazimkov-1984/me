@@ -1,0 +1,37 @@
+$styles: main_screen;
+.#{$styles}{
+    position: relative;
+    background: url(../img/bg.jpeg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    min-height: 100vh;
+    @include flex (center, center,  column);
+
+
+        &__title {
+        position: relative;
+        z-index: 5;
+        @include font_Lato;
+        @include text ($H1000, 800, $text-main-color);
+        text-align: center;
+       width: 50%;
+    }
+    &__subtitle {
+        position: relative;
+        z-index: 5;
+        @include font_Montserat;
+        @include text ($H600, 400, $text-main-color);
+        text-align: center;
+       width: 100%;
+    }
+}
+.main_screen:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.7);;
+    z-index: 2;
+}

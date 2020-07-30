@@ -16,3 +16,15 @@
   align-items: $align-items;
   flex-wrap: $wrap;
 }
+
+@mixin font_Lato {
+  font-family: 'Lato', sans-serif;
+}
+@mixin font_Montserat {
+  font-family: 'Montserrat', sans-serif;
+}
+@mixin font_Montserat--bold {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
