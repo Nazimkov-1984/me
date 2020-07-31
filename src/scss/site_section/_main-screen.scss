@@ -20,9 +20,19 @@ $styles: main_screen;
         position: relative;
         z-index: 5;
         @include font_Montserat;
-        @include text ($H600, 400, $text-main-color);
+        @include text ($H600, 400, $color_hover_nav);
         text-align: center;
        width: 100%;
+       margin-bottom: 36px;
+    }
+    &__arrow__img {
+        position: relative;
+        z-index: 5;
+        transition: all .8s;
+    }
+    &__arrow__img:hover {
+        cursor: pointer;
+        opacity: .8;
     }
 }
 .main_screen:after{

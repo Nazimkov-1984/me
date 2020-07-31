@@ -1,0 +1,14 @@
+$styles: sertificates;
+.#{$styles}{
+    @include flex (center, center, column);
+    padding: 50px 0px 50px 0px;
+
+
+
+&__title {
+    @include text ($H600, 800, $text-black);
+    @include font_Montserat--bold;
+    margin-bottom: 50px;
+}
+
+}

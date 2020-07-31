@@ -1,0 +1,20 @@
+$styles: header;
+.#{$styles}{
+    @include flex (center, center, row);
+    background-color: $color_bg_nav;
+    &__nav {
+        @include flex (space-around, center, row);
+        width: 100%;
+        padding: 20px 0px 20px 0px;
+    }
+
+    &__nav__item__link {
+        @include text ($H200, 400, $text-main-color);
+      @include font_Lato;
+      transition:  all .8s;
+   }
+    &__nav__item__link:hover {
+        color: $color_hover_nav;
+        cursor: pointer;
+    }
+}

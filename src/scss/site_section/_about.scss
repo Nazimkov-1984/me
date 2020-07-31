@@ -1,0 +1,59 @@
+$styles: about;
+.#{$styles}{
+@include flex (center, center, column);
+padding: 50px 0px 50px 0px;
+
+&__title {
+    
+    @include text ($H600, 800, $text-black);
+    @include font_Montserat--bold;
+    margin-bottom: 50px;
+}
+&__wrapper {
+    @include flex (space-evenly, center, row);
+}
+&__img-wrapper {
+    flex-basis: 50%;
+
+}
+&__img {
+    width: 50%;
+    height: 50%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+
+}
+&__text-wrapper {
+    flex-basis: 33%;
+    @include flex (center, center, column);
+
+}
+&__text {
+     @include text($H200, 400,$text-black );
+     @include font_Montserat;
+     margin-bottom: 20px;
+
+}
+ &__button-wrapper{
+     @include flex (center, center, row);
+ }
+&__button {
+    background-color: $color_hover_nav;
+    padding: 25px 25px 25px 25px;
+    text-align: center;
+    @include text($H200, 400,$text-black);
+    margin-right: 10px;
+    @include font_Lato;
+    transition: all .8s;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+&__button:last-child{
+    margin-right: 0px;
+}
+&__button:hover {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+
+}
