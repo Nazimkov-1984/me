@@ -11,7 +11,7 @@ $styles: main_screen;
         &__title {
         position: relative;
         z-index: 5;
-        @include font_Lato;
+        @include font_Montserat;
         @include text ($H1000, 800, $text-main-color);
         text-align: center;
        width: 50%;
@@ -23,8 +23,9 @@ $styles: main_screen;
         @include text ($H600, 400, $color_hover_nav);
         text-align: center;
        width: 100%;
-       margin-bottom: 36px;
+       margin-bottom: 50px;
     }
+   
     &__arrow__img {
         position: relative;
         z-index: 5;
