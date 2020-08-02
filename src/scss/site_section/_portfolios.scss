@@ -1,0 +1,46 @@
+$styles: portfolio;
+.#{$styles}{
+    @include flex (center, center, column);
+    padding-top: 56px;
+    padding-bottom: 70px;
+
+    &__title {
+        @include text ($H600, 800, $text-black);
+        @include font_Montserat--bold;
+        margin-bottom: 50px;
+    }
+    &__card {
+        @include flex (center, center, row);
+        flex-wrap: wrap;
+    }
+    &__card__item {
+        flex-basis: 50%;
+        @include flex (center, center, column);
+        margin-bottom: 20px;
+    }
+    &__card__img {
+width: 300px;  
+height: 200px;
+margin-bottom: 16px;  
+box-shadow: 0 0 10px rgba(0,0,0,0.5);
+transition: all .8s;
+}
+&__card__img:hover{
+    transform: scale(1.1);
+}
+&__button {
+    display: block;
+    padding: 10px 20px 10px 20px;
+    text-align: center;     
+    @include text ($H100, 400, $text-black);
+    @include font_Montserat;
+    background-color: $color_hover_nav;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    transition: all .8s;
+}
+&__button:hover {
+    font-weight: 900;
+    color: $text-main-color;
+}
+
+}
