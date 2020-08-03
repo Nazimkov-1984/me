@@ -2,7 +2,7 @@
 
 const   itemCharger = document.querySelectorAll('.charger__image-list__item'), 
         bulletCharger = document.querySelectorAll('.pagination__items'),
-        bulletParentCharger = document.querySelector ('.charger__pagination');
+        bulletParentCharger = document.querySelector('.charger__pagination');
 
         function hideTabCharger () {
             itemCharger.forEach (item => {
@@ -13,12 +13,13 @@ const   itemCharger = document.querySelectorAll('.charger__image-list__item'),
             });
         }
         function showTabCharger (i) {
-            itemCharger[i].style.display = 'block';
+            itemCharger[i].style.display = 'flex';
             bulletCharger[i].classList.add('pagination__items--active');
     
         }
         hideTabCharger ();
-        showTabCharger (1);
+        showTabCharger (0);
+
         bulletParentCharger.addEventListener('click', () => {
         const target = event.target;
         if (target && target.classList.contains('pagination__items')) {
@@ -26,7 +27,6 @@ const   itemCharger = document.querySelectorAll('.charger__image-list__item'),
                 if (target === item) {
                     hideTabCharger ();
                     showTabCharger (i); 
-                    console.log ('hello');
                 }
             });
         }
