@@ -1,0 +1,32 @@
+$styles: charger;
+.#{$styles}{
+@include flex (center, center, column);
+padding: 50px 0px 50px 0px;
+&__title {
+    margin-bottom: 50px;
+    @include text ($H800, 800,  $color_hover_nav);
+    @include font_Montserat--bold;
+}
+&__img {
+width: 80%;
+margin-bottom: 50px;
+}
+&__pagination {
+    @include flex (center, center, row);
+    margin-bottom: 20px;
+}
+&__subtitle {
+    margin-bottom: 26px;
+    @include text ($H500, 800,  $text_black);
+    @include font_Montserat;  
+}
+&__tehnology-list{
+    list-style-type: circle;
+}
+&__tehnology-list__item{
+    margin-bottom: 26px;
+    @include text ($H300, 800,  $text_black);
+    @include font_Lato;  
+}
+
+}
