@@ -10,5 +10,8 @@ $styles: sertificates;
     @include font_Montserat--bold;
     margin-bottom: 50px;
 }
-
+&__img {
+    width: 30%;
+    height: 30%;
+}
 }
