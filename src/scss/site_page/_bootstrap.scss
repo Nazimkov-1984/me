@@ -7,22 +7,14 @@ padding: 50px 0px 50px 0px;
     @include text ($H800, 800,  $color_hover_nav);
     @include font_Montserat--bold;
 }
-&__image-list__item {
-    @include flex (center, center, row);
-}
-&__img {
-width: 80%;
-margin-bottom: 36px;
-box-shadow: 0 0 10px rgba(0,0,0,0.5);
-}
-&__pagination {
-    @include flex (center, center, row);
-    margin-bottom: 50px;
-}
 &__subtitle {
     margin-bottom: 26px;
     @include text ($H500, 800,  $text_black);
     @include font_Montserat;  
+}
+&__carousel {
+    width: 100%;
+    height: 100vh;
 }
 &__tehnology-list{
     list-style-type: circle;

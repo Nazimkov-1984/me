@@ -27,15 +27,13 @@ background-size: cover;
 }
 &__text-wrapper {
     flex-basis: 33%;
-    @include flex (center, center, column);
+    @include flex (center, flex-start, column);
     background-color: #fff;
-
 }
 &__text {
      @include text($H200, 400,$text-black );
      @include font_Montserat;
      margin-bottom: 20px;
-
 }
  &__button-wrapper{
      @include flex (center, center, row);
