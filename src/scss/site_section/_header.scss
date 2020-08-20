@@ -13,6 +13,11 @@ $styles: header;
       @include font_Lato;
       transition:  all .8s;
    }
+     @media(max-width: 375px),(max-width: 768px){
+        &__nav {
+            display: none;
+        }
+    }
     &__nav__item__link:hover {
         color: $color_hover_nav;
         cursor: pointer;

@@ -9,12 +9,18 @@ $styles: main_screen;
 
 
         &__title {
+        @include flex (center, center,  row);
         position: relative;
         z-index: 5;
         @include font_Montserat;
         @include text ($H1000, 800, $text-main-color);
         text-align: center;
-       width: 50%;
+        width: 50%;
+    }
+    @media(max-width: 375px),(max-width: 768px){
+        &__title{
+            @include text ($H600, 800, $text-main-color);
+        }
     }
     &__subtitle {
         position: relative;
@@ -25,7 +31,11 @@ $styles: main_screen;
        width: 100%;
        margin-bottom: 50px;
     }
-   
+    @media(max-width: 375px),(max-width: 768px){
+        &__subtitle{
+            @include text ($H300, 400, $color_hover_nav);
+        }
+    }
     &__arrow__img {
         position: relative;
         z-index: 5;

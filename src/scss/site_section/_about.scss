@@ -7,7 +7,6 @@ background-position: center center;
 background-size: cover;
 
 &__title {
-    
     @include text ($H600, 800, $text-black);
     @include font_Montserat--bold;
     margin-bottom: 50px;
@@ -15,9 +14,18 @@ background-size: cover;
 &__wrapper {
     @include flex (space-evenly, center, row);
 }
+@media(max-width: 375px),(max-width: 768px){
+    &__wrapper{
+        flex-direction: column;
+    }
+    &__img-wrapper {
+        @include flex (center, center, row);
+        flex-basis: 100%;
+    }
+    
+}
 &__img-wrapper {
     flex-basis: 50%;
-
 }
 &__img {
     width: 50%;
@@ -30,6 +38,10 @@ background-size: cover;
     @include flex (center, flex-start, column);
     background-color: #fff;
 }
+@media(max-width: 375px),(max-width: 768px){
+    align-items: center;
+    justify-content: center;
+}
 &__text {
      @include text($H200, 400,$text-black );
      @include font_Montserat;
@@ -37,6 +49,7 @@ background-size: cover;
 }
  &__button-wrapper{
      @include flex (center, center, row);
+     width: 100%;
  }
 &__button {
     background-color: $color_hover_nav;

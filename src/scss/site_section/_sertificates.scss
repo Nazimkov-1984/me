@@ -10,6 +10,11 @@ $styles: sertificates;
     @include font_Montserat--bold;
     margin-bottom: 50px;
 }
+@media(max-width: 375px),(max-width: 768px){
+    &__title {
+        @include text ($H300, 800, $text-black);
+    }   
+}
 &__img {
     width: 30%;
     height: 30%;
