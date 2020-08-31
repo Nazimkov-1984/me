@@ -29,7 +29,7 @@ $styles: main_screen;
         @include text ($H600, 400, $color_hover_nav);
         text-align: center;
        width: 100%;
-       margin-bottom: 50px;
+       margin-bottom: 60px;
     }
     @media(max-width: 375px),(max-width: 768px){
         &__subtitle{
@@ -40,6 +40,25 @@ $styles: main_screen;
         position: relative;
         z-index: 5;
         transition: all .8s;
+       
+    }
+    &__arrow{
+      height: 100px;
+    }
+    &__arrow__img {
+        animation: animate 1s infinite;
+        animation-timing-function: linear ; 
+    }
+    @keyframes animate {
+        0% {
+            margin-top: 20px ;
+        }
+        50% {
+            margin-top: 0px;
+        }
+        100% {
+            margin-top: 20px;
+        }
     }
     &__arrow__img:hover {
         cursor: pointer;

@@ -18,5 +18,9 @@ $styles: sertificates;
 &__img {
     width: 30%;
     height: 30%;
+    margin-bottom: 50px;
 }
+&__img:last-child{
+    margin-bottom: 0px;
 }
+}   
