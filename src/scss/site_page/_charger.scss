@@ -15,6 +15,11 @@ padding: 50px 0px 50px 0px;
 &__d-block {
     height: 800px;
 }
+@media(max-width: 375px),(max-width: 768px){
+    &__d-block{
+        height: 400px;
+    }  
+}
 &__pagination {
     @include flex (center, center, row);
     margin-bottom: 50px;
