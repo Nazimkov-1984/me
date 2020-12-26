@@ -19,8 +19,12 @@ $styles: sertificates;
     width: 30%;
     height: 30%;
     margin-bottom: 50px;
+    transition: all 0.6s;
 }
 &__img:last-child{
     margin-bottom: 0px;
+}
+&__img:hover {
+transform: scale(1.1);
 }
 }   
