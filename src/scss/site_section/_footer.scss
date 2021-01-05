@@ -13,10 +13,16 @@ $styles: footer;
     }
     &__social-link {
         @include flex (center, center, row);
+        flex-wrap: wrap;
     }
     &__social-link__item {
         margin-right: 30px;
     }
+    @media(max-width: 375px),(max-width: 768px){
+        &__social-link__item{
+            margin-bottom: 15px;
+        }   
+    } 
    &__social-link__item:last-child{
        margin-right: 0px;
    }
@@ -24,7 +30,7 @@ $styles: footer;
         width: 50px;
         height: 50px;
         transition: all .8s;
-    }               
+    }     
     &__social-link__img:hover {
         filter: invert(.5);
     }
